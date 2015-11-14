@@ -1,0 +1,24 @@
+{
+  "name": "pixmicat",
+  "version": "8.4.0",
+  "description": "Pixmicat! Imageboard System [![Build Status](https://drone.io/github.com/scribetw/pixmicat/status.png)](https://drone.io/github.com/scribetw/pixmicat/latest) ========",
+  "main": "pixmicat.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scribetw/pixmicat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scribetw/pixmicat/issues"
+  },
+  "homepage": "https://github.com/scribetw/pixmicat#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3",
+    "mocha-generators": "^1.2.0",
+    "nightmare": "^2.0.7",
+    "vo": "^1.0.3"
+  }
+}
