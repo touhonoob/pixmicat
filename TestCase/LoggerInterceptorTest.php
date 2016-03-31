@@ -11,14 +11,14 @@ class LoggerInterceptorTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @expectedException PHPUnit_Framework_Error
+	 * @expectedException TypeError
 	 */
 	public function testInstanceException() {
 		$obj = new LoggerInterceptor();
 	}
 
 	/**
-	 * @expectedException PHPUnit_Framework_Error
+	 * @expectedException TypeError
 	 */
 	public function testInstanceException2() {
 		$obj = new LoggerInterceptor(NULL);

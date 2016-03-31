@@ -37,14 +37,14 @@ class LoggerInjectorTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @expectedException PHPUnit_Framework_Error
+	 * @expectedException TypeError
 	 */
 	public function testInstanceInvaildInterceptor() {
 		new LoggerInjector(new TempClass(), new TempClass());
 	}
 
 	/**
-	 * @expectedException PHPUnit_Framework_Error
+	 * @expectedException TypeError
 	 */
 	public function testInstanceInvaildInterceptor2() {
 		new LoggerInjector(new TempClass(), NULL);
