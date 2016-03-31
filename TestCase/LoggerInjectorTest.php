@@ -37,16 +37,34 @@ class LoggerInjectorTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @expectedException TypeError
+	 * @requires PHP 5.6
+	 * @expectedException PHPUnit_Framework_Error
 	 */
 	public function testInstanceInvaildInterceptor() {
 		new LoggerInjector(new TempClass(), new TempClass());
 	}
 
 	/**
+	 * @requires PHP 7
 	 * @expectedException TypeError
 	 */
+	public function testInstanceInvaildInterceptor_7() {
+		new LoggerInjector(new TempClass(), new TempClass());
+	}
+
+	/**
+	 * @requires PHP 5.6
+	 * @expectedException PHPUnit_Framework_Error
+	 */
 	public function testInstanceInvaildInterceptor2() {
+		new LoggerInjector(new TempClass(), NULL);
+	}
+
+	/**
+	 * @requires PHP 7
+	 * @expectedException TypeError
+	 */
+	public function testInstanceInvaildInterceptor2_7() {
 		new LoggerInjector(new TempClass(), NULL);
 	}
 
